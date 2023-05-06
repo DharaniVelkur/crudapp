@@ -47,7 +47,7 @@ const AddTodo = ({addtodo,title,setTitle,desc,setDesc,editTodo,updateTodo}) => {
         </div>
         
         <button type="submit" className="btn btn-primary btn-sm">
-          Add
+            {editTodo?'Update':'Add'}
         </button>
       </form>
     </div>
