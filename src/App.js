@@ -29,6 +29,7 @@ function App() {
     todoscopy[index].title=title;
     todoscopy[index].desc=desc;
     setTodos(todoscopy);
+    setEditTodo(false);
   }
   var addtodo=(title,desc)=>{
     let sno;
@@ -51,7 +52,7 @@ let [todos,setTodos]=useState([]);
   return (
 <>
 <Navbar title="My todos List"/>
-<AddTodo addtodo={addtodo} updateTodo={updateTodo} title={title} setTitle={setTitle} desc={desc}  setDesc={setDesc} editTodo={editTodo}/>
+<AddTodo addtodo={addtodo} updateTodo={updateTodo} title={title} setTitle={setTitle} desc={desc}  setDesc={setDesc} editTodo={editTodo} setEditTodo={setEditTodo}/>
 <Todos todos={todos} onEdit={onEdit} onDelete={onDelete}/>
 <Footer/>
 </>

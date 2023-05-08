@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddTodo = ({addtodo,title,setTitle,desc,setDesc,editTodo,updateTodo}) => {
+const AddTodo = ({addtodo,title,setTitle,desc,setDesc,editTodo,setEditTodo,updateTodo}) => {
  
     const submit =(e)=>{
         e.preventDefault();
@@ -48,6 +48,7 @@ const AddTodo = ({addtodo,title,setTitle,desc,setDesc,editTodo,updateTodo}) => {
         
         <button type="submit" className="btn btn-primary btn-sm">
             {editTodo?'Update':'Add'}
+            
         </button>
       </form>
     </div>
